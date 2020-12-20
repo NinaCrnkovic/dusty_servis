@@ -1,0 +1,178 @@
+/* --Main page-- */
+
+.main-container {
+  box-sizing: border-box;
+}
+.header {
+  height: 80px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  background-color: #034791;
+  align-items: center;
+  box-shadow: 0px 3px 10px 0px #000000;
+}
+h1,
+h3 {
+  color: #f2f6f9;
+  flex-basis: 100%;
+  margin: 2px;
+}
+@media only screen and (max-width: 640px) {
+  h1,
+  h3 {
+    font-size: 0.8em;
+  }
+}
+
+.logo {
+  height: 80%;
+  pointer-events: none;
+  margin: 40px;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100vw;
+  height: 70vh;
+}
+.container1 {
+  flex-basis: 40%;
+  text-align: center;
+}
+
+/*---Button styles---*/
+button {
+  padding: 10px;
+  background-color: #f03c2d;
+  color: #f2f6f9;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 1000;
+  width: 200p;
+}
+.closeBtn {
+  flex-basis: 20%;
+  padding: 0px;
+}
+
+.prevNexCont {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/*-----modal------*/
+
+.modal {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  text-align: right;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #034791;
+  padding: 20px;
+  border-radius: 5px;
+  color: #f2f6f9;
+  box-shadow: 7px 7px 10px 0px #000000;
+  max-width: 380px;
+}
+.configCont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.configCont > h3 {
+  text-align: center;
+}
+
+/*---------form------*/
+
+.form-group {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.stepHeading {
+  margin: 10px;
+  align-self: left;
+}
+.choiceCont {
+  margin: 20px 30px 20px 5px;
+  padding: 10px;
+  width: 100%;
+}
+.choiceCont > input {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.step1Btn {
+  float: right;
+}
+
+/*----- step 2---*/
+.checkbox {
+  margin: 5px;
+}
+.cuponInput {
+  height: 32px;
+}
+
+.prevNextCont1 {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+}
+
+.cuponLink {
+  color: rgb(247, 240, 240);
+  text-decoration: underline;
+  
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.cuponMessage{
+  font-size: 1.2em;
+  color: red;
+}
+
+/*-------step3---*/
+.choiceContStep3 {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+.choiceContStep3 > input,
+.choiceContStep3 > textarea {
+  margin: 10px;
+}
+/*-------step4---*/
+.step4Cont {
+  border-bottom: 1px solid grey;
+}
+.step4Btn,
+.btnX {
+  height: 25px;
+  font-size: 0.7em;
+  text-align: center;
+  padding: 5px;
+}
+/*-------step4---*/
+.step5Btn {
+  transform: translate(240%, 0%);
+}
+.step5Cont {
+  text-align: center;
+}
